@@ -23,6 +23,26 @@
 .text-center {
   text-align: center; }
 
+.section-header {
+  margin: 1rem 0;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem 0;
+  text-transform: uppercase; }
+
+.divide {
+  width: 3rem;
+  height: 4px;
+  margin: 0 auto;
+  background-color: #ef6d6d; }
+
+.lead {
+  margin: 1rem 0;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 2.2rem; }
+
 .my-1 {
   margin: 1rem 0; }
 
@@ -63,6 +83,20 @@
       font-size: 4rem; }
       #home .content h1 .typewrite {
         display: block; }
+
+#home-a .skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  gap: 10px; }
+  #home-a .skills .skill {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    border-radius: 8px; }
+    #home-a .skills .skill i {
+      color: #ef6d6d; }
+    #home-a .skills .skill p {
+      font-size: 1.1rem; }
 
 * {
   padding: 0;

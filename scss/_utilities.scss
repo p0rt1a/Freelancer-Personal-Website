@@ -35,6 +35,29 @@
   text-align: center;
 }
 
+.section-header {
+  margin: 1rem 0;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem 0;
+  text-transform: uppercase;
+}
+
+.divide {
+  width: 3rem;
+  height: 4px;
+  margin: 0 auto;
+  background-color: $primary-color;
+}
+
+.lead {
+  margin: 1rem 0;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+
 .my-1 {
   margin: 1rem 0;
 }
