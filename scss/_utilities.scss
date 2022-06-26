@@ -1,0 +1,44 @@
+.container {
+  max-width: $max-width;
+  margin: auto;
+}
+
+.active {
+  border-bottom: 3px solid $primary-color !important;
+}
+
+%btn {
+  display: inline-block;
+  padding: 0.7rem 1.3rem;
+  transition: all 0.5s;
+}
+
+.btn {
+  &-primary {
+    @extend %btn;
+    background-color: $primary-color;
+    color: #fff;
+  }
+
+  &-light {
+    @extend %btn;
+    background-color: $light-color;
+    color: $dark-color;
+
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}

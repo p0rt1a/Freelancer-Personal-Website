@@ -1,0 +1,53 @@
+#home {
+  background: $bg-image;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+
+  nav {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      width: 70px;
+      height: 70px;
+    }
+
+    ul {
+      display: flex;
+
+      li {
+        margin-left: 2rem;
+
+        a {
+          text-transform: uppercase;
+          color: #fff;
+          padding-bottom: 1rem;
+          transition: border-bottom 0.3s;
+          border-bottom: solid transparent;
+
+          &:hover {
+            border-bottom: 3px solid #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    text-align: center;
+    padding-top: 15%;
+
+    h1 {
+      font-size: 4rem;
+
+      .typewrite {
+        display: block;
+      }
+    }
+  }
+}
