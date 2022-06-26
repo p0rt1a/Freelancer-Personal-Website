@@ -39,7 +39,6 @@
 .lead {
   margin: 1rem 0;
   padding: 2rem 0;
-  text-align: center;
   font-size: 1.4rem;
   line-height: 2.2rem; }
 
@@ -84,19 +83,55 @@
       #home .content h1 .typewrite {
         display: block; }
 
-#home-a .skills {
+#home-a .items {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  text-align: center;
   gap: 10px; }
-  #home-a .skills .skill {
+  #home-a .items .item {
     padding: 2rem;
     background-color: #f4f4f4;
     border-radius: 8px; }
-    #home-a .skills .skill i {
+    #home-a .items .item i {
       color: #ef6d6d; }
-    #home-a .skills .skill p {
+    #home-a .items .item p {
       font-size: 1.1rem; }
+
+#home-b .items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+  #home-b .items .item {
+    padding: 3rem 2rem; }
+    #home-b .items .item:nth-of-type(even) {
+      background-color: #f4f4f4; }
+    #home-b .items .item:nth-of-type(odd) {
+      background-color: #ccc; }
+
+#home-c .items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+  #home-c .items .item i {
+    position: relative;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 50%;
+    background-color: #333;
+    width: 125px;
+    height: 125px;
+    transition: all 1s; }
+    #home-c .items .item i:hover {
+      background-color: #ef6d6d; }
+      #home-c .items .item i:hover .step-number {
+        background-color: #333; }
+    #home-c .items .item i .step-number {
+      position: absolute;
+      line-height: 15px;
+      top: 0;
+      right: 0;
+      background-color: #ef6d6d;
+      padding: 1rem;
+      font-size: 1.5rem;
+      border-radius: 50%;
+      transition: all 1s; }
 
 * {
   padding: 0;

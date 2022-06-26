@@ -54,13 +54,12 @@
 
 #home {
   &-a {
-    .skills {
+    .items {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      text-align: center;
       gap: 10px;
 
-      .skill {
+      .item {
         padding: 2rem;
         background-color: $light-color;
         border-radius: 8px;
@@ -71,6 +70,65 @@
 
         p {
           font-size: 1.1rem;
+        }
+      }
+    }
+  }
+
+  &-b {
+    .items {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      .item {
+        padding: 3rem 2rem;
+
+        &:nth-of-type(even) {
+          background-color: $light-color;
+        }
+
+        &:nth-of-type(odd) {
+          background-color: $medium-color;
+        }
+      }
+    }
+  }
+
+  &-c {
+    .items {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      .item {
+        i {
+          position: relative;
+          color: #fff;
+          padding: 2rem;
+          border-radius: 50%;
+          background-color: $dark-color;
+          width: 125px;
+          height: 125px;
+          transition: all 1s;
+
+          &:hover {
+            background-color: $primary-color;
+
+            .step-number {
+              background-color: $dark-color;
+            }
+          }
+
+          .step-number {
+            position: absolute;
+            line-height: 15px;
+            top: 0;
+            right: 0;
+            background-color: $primary-color;
+            padding: 1rem;
+            font-size: 1.5rem;
+            border-radius: 50%;
+            transition: all 1s;
+          }
         }
       }
     }
