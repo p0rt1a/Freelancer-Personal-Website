@@ -139,32 +139,34 @@
     #home-b .items .item:nth-of-type(odd) {
       background-color: #ccc; }
 
-#home-c .items {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); }
-  #home-c .items .item i {
-    position: relative;
-    color: #fff;
-    padding: 2rem;
-    border-radius: 50%;
-    background-color: #333;
-    width: 125px;
-    height: 125px;
-    transition: all 1s; }
-    #home-c .items .item i:hover {
-      background-color: #ef6d6d; }
-      #home-c .items .item i:hover .step-number {
-        background-color: #333; }
-    #home-c .items .item i .step-number {
-      position: absolute;
-      line-height: 15px;
-      top: 0;
-      right: 0;
-      background-color: #ef6d6d;
-      padding: 1rem;
-      font-size: 1.5rem;
+#home-c {
+  padding-bottom: 2rem; }
+  #home-c .items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); }
+    #home-c .items .item i {
+      position: relative;
+      color: #fff;
+      padding: 2rem;
       border-radius: 50%;
+      background-color: #333;
+      width: 125px;
+      height: 125px;
       transition: all 1s; }
+      #home-c .items .item i:hover {
+        background-color: #ef6d6d; }
+        #home-c .items .item i:hover .step-number {
+          background-color: #333; }
+      #home-c .items .item i .step-number {
+        position: absolute;
+        line-height: 15px;
+        top: 0;
+        right: 0;
+        background-color: #ef6d6d;
+        padding: 1rem;
+        font-size: 1.5rem;
+        border-radius: 50%;
+        transition: all 1s; }
 
 * {
   padding: 0;
@@ -186,7 +188,6 @@ img {
 
 #footer {
   background-color: #333;
-  margin-top: 2rem;
   color: #fff;
   font-size: 1rem; }
   #footer .footer-items {
@@ -218,7 +219,8 @@ img {
     padding: 1rem; }
 
 #about-b {
-  color: #fff; }
+  color: #fff;
+  padding-bottom: 2rem; }
   #about-b .skills > div {
     padding-top: 1rem; }
   #about-b .skills .skill-bar {
