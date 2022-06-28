@@ -30,4 +30,24 @@
       }
     }
   }
+
+  &-c {
+    .programs {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-evenly;
+      text-align: center;
+      gap: 20px;
+      padding: 1.5rem 0;
+
+      & > div {
+        flex: 1;
+
+        img {
+          max-width: 200px;
+        }
+      }
+    }
+  }
 }

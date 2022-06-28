@@ -8,6 +8,9 @@
 .bg-dark {
   background-color: #333; }
 
+.bg-light {
+  background-color: #f4f4f4; }
+
 .btn-primary, .btn-light {
   display: inline-block;
   padding: 0.7rem 1.3rem;
@@ -224,3 +227,16 @@ img {
     #about-b .skills .skill-bar .progress {
       height: 20px;
       background-color: #ef6d6d; }
+
+#about-c .programs {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  gap: 20px;
+  padding: 1.5rem 0; }
+  #about-c .programs > div {
+    flex: 1; }
+    #about-c .programs > div img {
+      max-width: 200px; }
