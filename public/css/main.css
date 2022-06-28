@@ -43,7 +43,6 @@
   background-color: #ef6d6d; }
 
 .lead {
-  margin: 1rem 0;
   padding: 2rem 0;
   font-size: 1.4rem;
   line-height: 2.2rem; }
@@ -242,3 +241,12 @@ img {
     flex: 1; }
     #about-c .programs > div img {
       max-width: 200px; }
+
+#projects-a .projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; }
+  #projects-a .projects .item {
+    background-color: #f4f4f4; }
+    #projects-a .projects .item > div {
+      padding: 0.5rem 0; }
