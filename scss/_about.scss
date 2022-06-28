@@ -1,0 +1,33 @@
+#about {
+  &-a {
+    .about-content {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+
+      .info {
+        font-size: 0.9rem;
+        padding: 1rem;
+      }
+    }
+  }
+
+  &-b {
+    color: #fff;
+
+    .skills {
+      & > div {
+        padding-top: 1rem;
+      }
+
+      .skill-bar {
+        background-color: #fff;
+        height: 20px;
+
+        .progress {
+          height: 20px;
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+}

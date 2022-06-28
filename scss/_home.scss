@@ -1,52 +1,88 @@
 #header {
-  background: $bg-image;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  color: #fff;
+  &-home {
+    background: $bg-image;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
 
-  nav {
-    padding: 1rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    nav {
+      padding: 1rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-    .logo {
-      width: 70px;
-      height: 70px;
+      .logo {
+        width: 70px;
+        height: 70px;
+      }
+
+      ul {
+        display: flex;
+
+        li {
+          margin-left: 2rem;
+
+          a {
+            text-transform: uppercase;
+            color: #fff;
+            padding-bottom: 1rem;
+            transition: border-bottom 0.3s;
+            border-bottom: solid transparent;
+
+            &:hover {
+              border-bottom: 3px solid #fff;
+            }
+          }
+        }
+      }
     }
 
-    ul {
-      display: flex;
+    .content {
+      text-align: center;
+      padding-top: 15%;
 
-      li {
-        margin-left: 2rem;
+      h1 {
+        font-size: 4rem;
 
-        a {
-          text-transform: uppercase;
-          color: #fff;
-          padding-bottom: 1rem;
-          transition: border-bottom 0.3s;
-          border-bottom: solid transparent;
-
-          &:hover {
-            border-bottom: 3px solid #fff;
-          }
+        .typewrite {
+          display: block;
         }
       }
     }
   }
 
-  .content {
-    text-align: center;
-    padding-top: 15%;
+  &-about {
+    nav {
+      padding: 1rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-    h1 {
-      font-size: 4rem;
+      .logo {
+        width: 70px;
+        height: 70px;
+      }
 
-      .typewrite {
-        display: block;
+      ul {
+        display: flex;
+
+        li {
+          margin-left: 2rem;
+
+          a {
+            text-transform: uppercase;
+            color: #fff;
+            padding-bottom: 1rem;
+            transition: border-bottom 0.3s;
+            border-bottom: solid transparent;
+
+            &:hover {
+              border-bottom: 3px solid #fff;
+            }
+          }
+        }
       }
     }
   }

@@ -7,6 +7,10 @@
   border-bottom: 3px solid $primary-color !important;
 }
 
+.bg-dark {
+  background-color: $dark-color;
+}
+
 %btn {
   display: inline-block;
   padding: 0.7rem 1.3rem;
@@ -36,7 +40,7 @@
 }
 
 .section-header {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   font-size: 2rem;
   text-align: center;
   padding: 1rem 0;
@@ -63,4 +67,12 @@
 
 .my-2 {
   margin: 2rem 0;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
 }

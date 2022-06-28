@@ -5,6 +5,9 @@
 .active {
   border-bottom: 3px solid #ef6d6d !important; }
 
+.bg-dark {
+  background-color: #333; }
+
 .btn-primary, .btn-light {
   display: inline-block;
   padding: 0.7rem 1.3rem;
@@ -24,7 +27,7 @@
   text-align: center; }
 
 .section-header {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   font-size: 2rem;
   text-align: center;
   padding: 1rem 0;
@@ -48,40 +51,67 @@
 .my-2 {
   margin: 2rem 0; }
 
-#header {
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+#header-home {
   background: url(../img/bg.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   color: #fff; }
-  #header nav {
+  #header-home nav {
     padding: 1rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    #header nav .logo {
+    #header-home nav .logo {
       width: 70px;
       height: 70px; }
-    #header nav ul {
+    #header-home nav ul {
       display: flex; }
-      #header nav ul li {
+      #header-home nav ul li {
         margin-left: 2rem; }
-        #header nav ul li a {
+        #header-home nav ul li a {
           text-transform: uppercase;
           color: #fff;
           padding-bottom: 1rem;
           transition: border-bottom 0.3s;
           border-bottom: solid transparent; }
-          #header nav ul li a:hover {
+          #header-home nav ul li a:hover {
             border-bottom: 3px solid #fff; }
-  #header .content {
+  #header-home .content {
     text-align: center;
     padding-top: 15%; }
-    #header .content h1 {
+    #header-home .content h1 {
       font-size: 4rem; }
-      #header .content h1 .typewrite {
+      #header-home .content h1 .typewrite {
         display: block; }
+
+#header-about nav {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  #header-about nav .logo {
+    width: 70px;
+    height: 70px; }
+  #header-about nav ul {
+    display: flex; }
+    #header-about nav ul li {
+      margin-left: 2rem; }
+      #header-about nav ul li a {
+        text-transform: uppercase;
+        color: #fff;
+        padding-bottom: 1rem;
+        transition: border-bottom 0.3s;
+        border-bottom: solid transparent; }
+        #header-about nav ul li a:hover {
+          border-bottom: 3px solid #fff; }
 
 #home-a .items {
   display: grid;
@@ -176,3 +206,21 @@ img {
         #footer .footer-items ul li i {
           padding: 0.6rem;
           font-size: 1.3rem; }
+
+#about-a .about-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr; }
+  #about-a .about-content .info {
+    font-size: 0.9rem;
+    padding: 1rem; }
+
+#about-b {
+  color: #fff; }
+  #about-b .skills > div {
+    padding-top: 1rem; }
+  #about-b .skills .skill-bar {
+    background-color: #fff;
+    height: 20px; }
+    #about-b .skills .skill-bar .progress {
+      height: 20px;
+      background-color: #ef6d6d; }
