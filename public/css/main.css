@@ -8,22 +8,35 @@
 .bg-dark {
   background-color: #333; }
 
+.bg-primary {
+  background-color: #ef6d6d; }
+
 .bg-light {
   background-color: #f4f4f4; }
 
-.btn-primary, .btn-light {
+.btn-primary, .btn-light, .btn-dark {
   display: inline-block;
   padding: 0.7rem 1.3rem;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  cursor: pointer; }
 
 .btn-primary {
   background-color: #ef6d6d;
   color: #fff; }
+  .btn-primary:hover {
+    background-color: #f4f4f4;
+    color: #333; }
 
 .btn-light {
   background-color: #f4f4f4;
   color: #333; }
   .btn-light:hover {
+    background-color: #ef6d6d; }
+
+.btn-dark {
+  background-color: #333;
+  color: #f4f4f4; }
+  .btn-dark:hover {
     background-color: #ef6d6d; }
 
 .text-center {
@@ -250,3 +263,37 @@ img {
     background-color: #f4f4f4; }
     #projects-a .projects .item > div {
       padding: 0.5rem 0; }
+
+#contact-a form {
+  display: grid;
+  grid-template-areas: "name email" "subject phone" "message message" "button button";
+  border: #f4f4f4;
+  gap: 1rem; }
+  #contact-a form *:not(.button) {
+    padding-left: 10px;
+    border-radius: 8px; }
+  #contact-a form .name {
+    grid-area: name;
+    height: 40px; }
+  #contact-a form .email {
+    grid-area: email;
+    height: 40px; }
+  #contact-a form .subject {
+    grid-area: subject;
+    height: 40px; }
+  #contact-a form .message {
+    grid-area: message;
+    height: 150px; }
+  #contact-a form .button {
+    grid-area: button;
+    height: 40px;
+    border: none;
+    border-radius: 8px; }
+
+#contact-b {
+  color: #fff; }
+  #contact-b .contacts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding: 3.5rem 0; }
